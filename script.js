@@ -26,11 +26,12 @@ menuBtn.addEventListener("click", function () {
     if (navLinks.classList.contains("show")) {
 
         menuBtn.innerHTML = "✕";
+        document.body.style.overflow = "hidden";
 
     } else {
 
         menuBtn.innerHTML = "☰";
-
+        document.body.style.overflow = "auto";
     }
 
 });
@@ -48,6 +49,7 @@ links.forEach(link => {
         navLinks.classList.remove("show");
 
         menuBtn.innerHTML = "☰";
+        document.body.style.overflow = "auto";
 
     });
 

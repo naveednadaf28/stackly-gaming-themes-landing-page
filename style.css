@@ -102,7 +102,7 @@ img{
 }
 
 .header .container{
-    padding:18px 0;
+    padding:1px 0;
 }
 
 .nav-top{
@@ -112,15 +112,22 @@ img{
 }
 
 .logo img{
-    width:140px;
+    width:120px;
+}
+.logo{
+    position:relative;
+    z-index:1001;
 }
 
 .menu-btn{
     background:none;
     border:none;
     color:white;
-    font-size:2rem;
+    font-size:1.8rem;
     cursor:pointer;
+
+    position:relative;
+    z-index:1001;
 }
 
 .navbar{
@@ -129,13 +136,26 @@ img{
 
 .navbar.show{
     display:block;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100vh;
+
+    background:#111827;
+
+    z-index:999;
+
+    padding-top:100px;
 }
 
 .nav-links{
     display:flex;
     flex-direction:column;
-    gap:18px;
-    margin-top:20px;
+    gap:30px;
+    margin-left:30px;
 }
 
 .nav-links a{
@@ -183,6 +203,12 @@ img{
     color:#cbd5e1;
     margin-bottom:30px;
     line-height:1.8;
+}
+.hero-extra{
+    color:#cbd5e1;
+    line-height:1.8;
+    max-width:850px;
+    margin:0 auto 30px;
 }
 
 .hero-buttons{
@@ -268,6 +294,26 @@ section{
     color:#8b5cf6;
 }
 
+
+
+
+
+
+.about-gaming{
+    text-align:center;
+}
+
+.about-text{
+    max-width:800px;
+    margin:auto;
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+
+
+
+
 /* =========================
    LINKS
 ========================= */
@@ -313,6 +359,10 @@ section{
 
 .footer a{
     color:#cbd5e1;
+}
+
+.footer a:hover{
+    color:#8b5cf6;
 }
 
 .footer li{
@@ -390,12 +440,8 @@ section{
         grid-template-columns:repeat(2,1fr);
     }
 
-    /* .footer-grid{
-        grid-template-columns:repeat(2,1fr);
-    } */
-
     .footer-grid{
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(4,1fr);
     align-items:start;
 }
 
@@ -404,12 +450,6 @@ section{
     }
 
 }
-
-
-
-
-
-
 
 .category-card img{
     width:100%;
@@ -441,13 +481,6 @@ section{
     transition:0.5s;
 }
 
-
-
-
-
-
-
-
 .game-card{
     position:relative;
 }
@@ -455,3 +488,4 @@ section{
 .game-card:hover{
     box-shadow:0 0 30px rgba(139,92,246,.5);
 }
+
